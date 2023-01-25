@@ -1,8 +1,12 @@
 #! /usr/bin/env python3
 from flask import Flask
+from login import login
+
 app = Flask(__name__)
 
 ##servicios rest
+@app.register_blueprint(login)
+
 @app.route("/", methods=['GET'])
 def hello():
     return "Hola Mundo"
