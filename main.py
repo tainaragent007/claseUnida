@@ -5,7 +5,7 @@ from login import login
 app = Flask(__name__)
 
 ##servicios rest
-@app.register_blueprint(login)
+app.register_blueprint(login)
 
 @app.route('/', methods=['GET'])
 def hello():
