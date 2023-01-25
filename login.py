@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Blueprint, request, jsonify
 from login import login 
 
 login = Blueprint('login', __name__)
@@ -14,20 +14,3 @@ def llamarServicioSet():
     print("Password",passw)
 
     #inicializarVariables(categoryId)
-    """"
-
-Ejemplo: 
-Url: http://localhost:5000/login
-Datos de entrada: 
-
-{
-    "user":"derlis"
-    "passw":"123"
-    
-}
-Salida:
-{
-    "categoria": "Null",
-    "codRes": "ERROR",
-    "menRes": "No existe"
-}"""
