@@ -12,8 +12,10 @@ int main()
     {
         cout << "\n******* Libro " << i + 1 << "*******:\n";
         cout << "Titulo: ";
-        cin >> titulos[i];
+        //cin >> titulos[i]; //No funciona con espacios
+        getline(cin, titulos[i]);
         cout << "Autor: ";
-        cin >> autores[i];
+        // cin >> autores[i]; //No funciona con espacios
+        getline(cin, autores[i]);
     }
 }
