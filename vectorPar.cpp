@@ -1,7 +1,7 @@
 #include "iostream"
-
-
-{   int x,cont,x,i,vectorP[100];
+using namespace std;
+int main (void) {
+    int x,cont,x,i,vectorP[100];
     int j=0, vectorI[100];
     i=0;
     for(x=1;x<=100;x++)
